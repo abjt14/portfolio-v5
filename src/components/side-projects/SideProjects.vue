@@ -13,7 +13,7 @@ import SideProject from './SideProject.vue';
       title: 'Portfolio V4',
       type: 'Website',
       href: 'https://abjt14.github.io/portfolio-v4/',
-      image_url: '/images/side-projects/portfolio-v4.png',
+      image_url: '/images/side-projects/portfolio-v4.webp',
       tags: [
         'Svelte',
         'SCSS',
@@ -25,7 +25,7 @@ import SideProject from './SideProject.vue';
       title: 'Magnetic Element',
       type: 'Code Snippet',
       href: 'https://codepen.io/abjt14/full/qBoEJwp',
-      image_url: '/images/side-projects/magnetic-element.png',
+      image_url: '/images/side-projects/magnetic-element.webp',
       tags: [
         'HTML',
         'CSS',
@@ -36,7 +36,7 @@ import SideProject from './SideProject.vue';
       title: 'Ye Unsplash',
       type: 'Website',
       href: 'https://abjt14.github.io/ye-unsplash/',
-      image_url: '/images/side-projects/ye-unsplash.png',
+      image_url: '/images/side-projects/ye-unsplash.webp',
       tags: [
         'HTML',
         'CSS',

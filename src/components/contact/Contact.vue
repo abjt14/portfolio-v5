@@ -61,7 +61,7 @@
       <div class="contact-row-inner">
         <div id="site-info">
           <div>
-            Site built using <span>Nuxt</span>, <span>Blender</span>, <span>Model Viewer</span> and <span>Github</span>. Deployed on <span>Netlify</span>.
+            Site built using <span>Vue</span>, <span>Blender</span>, <span>Model Viewer</span> and <span>Github</span>. Deployed on <span>Netlify</span>.
           </div>
           <div>
             © 2022 All rights reserved.
