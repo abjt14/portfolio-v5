@@ -88,7 +88,7 @@
       }
 
       @media only screen and (max-width: 800px) {
-        padding: 2rem;
+        padding: 1rem;
       }
 
       &:first-child {
@@ -117,7 +117,7 @@
         gap: 5rem;
 
         @media only screen and (max-width: 800px) {
-          gap: 2rem;
+          gap: 1rem;
         }
       }
     }

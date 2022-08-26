@@ -106,7 +106,7 @@
 
       @media only screen and (max-width: 800px) {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         align-items: center;
       }
 
@@ -118,7 +118,7 @@
         gap: 1rem;
 
         @media only screen and (max-width: 800px) {
-          gap: 2rem;
+          gap: 1rem;
         }
 
         h1.headline-col {
@@ -160,10 +160,12 @@
           font-weight: 100;
           opacity: 0;
           transition: all .3s ease;
+          margin-top: 1rem;
 
           @media only screen and (max-width: 800px) {
             text-align: center;
             transform: translateY(-1rem);
+            margin-top: .5rem;
           }
 
           &.copied {

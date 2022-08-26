@@ -29,7 +29,10 @@
     font-size: 1.25rem;
     font-weight: 300;
     padding: 1.5rem;
-    border: 1px solid #000;
+
+    @media only screen and (max-width: 800px) {
+      padding: 1rem;
+    }
 
     &:nth-child(1) {
       background-color: $yellow;
@@ -58,6 +61,10 @@
 
     .project-summary {
       margin-top: .5rem;
+
+      @media only screen and (max-width: 800px) {
+        margin-top: 0;
+      }
     }
 
     .project-tags {

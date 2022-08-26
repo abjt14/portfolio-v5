@@ -70,8 +70,8 @@
     padding: 5rem;
 
     @media only screen and (max-width: 800px) {
-      padding: 2rem;
-    min-height: calc(100vh - 63.5px);
+      padding: 1rem;
+      min-height: calc(100vh - 63.5px);
     }
 
     .hero-row {
@@ -102,7 +102,7 @@
         flex: 1;
         display: flex;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 1rem;
 
         h1.headline-col {
           font-size: 4rem;
