@@ -85,6 +85,12 @@ import SideProject from './SideProject.vue';
     .side-projects-col {
       padding: 5rem;
 
+      &:nth-of-type(1) {
+        @media only screen and (max-width: 800px) {
+          padding-bottom: 0;
+        }
+      }
+
       @media only screen and (max-width: 800px) {
         padding: 2rem;
       }
@@ -113,6 +119,10 @@ import SideProject from './SideProject.vue';
       #side-projects-exp {
         display: grid;
         gap: 5rem;
+
+        @media only screen and (max-width: 800px) {
+          gap: 2rem;
+        }
       }
     }
   }

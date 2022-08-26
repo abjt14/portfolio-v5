@@ -81,6 +81,12 @@
     .work-col {
       padding: 5rem;
 
+      &:nth-of-type(1) {
+        @media only screen and (max-width: 800px) {
+          padding-bottom: 0;
+        }
+      }
+
       @media only screen and (max-width: 800px) {
         padding: 2rem;
       }
