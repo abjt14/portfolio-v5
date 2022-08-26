@@ -9,4 +9,6 @@
   --green: #23a094;
 
   --border: #000;
+
+  --model-filter-invert: invert(1);
 }

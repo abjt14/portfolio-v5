@@ -172,7 +172,7 @@
 
             @media only screen and (max-width: 800px) {
               text-align: center;
-            transform: translateY(-1.5rem);
+              transform: translateY(-1.5rem);
             }
           }
         }

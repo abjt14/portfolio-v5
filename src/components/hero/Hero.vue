@@ -33,7 +33,7 @@
         Hello, I am Abhijeet.
       </div>
       <div class="hero-row-inner text-align-right text-align-left-mobile">
-        Web Developer.<br/>CG Hobbyist.
+        Web Developer.<br/>CG Artist.
       </div>
     </div>
     <div class="hero-row">
