@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
   import NavBar from './components/navbar/NavBar.vue';
   import Hero from './components/hero/Hero.vue';
   import Work from './components/work/Work.vue';

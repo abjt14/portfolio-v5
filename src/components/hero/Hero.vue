@@ -20,11 +20,6 @@
   }
 
   onMounted(() => {
-    /* Our observer composable is used here (onIntersect) with
-        onEnter as the callback when intersecting and
-        onExit as the callback when no longer intersecting.
-        {threshold: 0.8} is the IntersectionObserver Options
-    */
     observer.value = onIntersect(scrollRef.value, onEnter, onExit, {
       threshold: .15,
     });
@@ -122,8 +117,6 @@
             display: inline-block;
             font-style: normal;
             font-weight: 900;
-			      // animation: animated-font-style 1s linear infinite, animated-font-color 2.5s steps(1, end) .25s infinite;
-			      // animation: animated-font-style 2s linear infinite, animated-font-color 5s steps(1, end) .5s infinite;
 
             @keyframes animated-font-style {
               0% {
@@ -202,7 +195,6 @@
       height: 100vh;
       width: 100vw;
       overflow: hidden;
-      // z-index: -1;
     }
   }
 </style>
