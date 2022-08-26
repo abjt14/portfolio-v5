@@ -30,6 +30,10 @@
       &:hover {
         transform: translate(-.25rem, -.25rem);
       }
+
+      &:active {
+        transform: translate(0, 0);
+      }
     }
   }
 </style>

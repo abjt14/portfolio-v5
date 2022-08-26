@@ -61,7 +61,7 @@
       <div class="contact-row-inner">
         <div id="site-info">
           <div>
-            Site built using <span>Vue</span>, <span>Blender</span>, <span>Model Viewer</span> and <span>Github</span>. Deployed on <span>Netlify</span>.
+            Site built using <span>Vite</span>, <span>Vue</span>, <span>Mixamo</span>, and <span>Blender</span>. Deployed on <span>Vercel</span>.
           </div>
           <div>
             © 2022 All rights reserved.
