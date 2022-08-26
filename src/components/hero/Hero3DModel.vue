@@ -10,10 +10,10 @@ export default {
   },
   mounted() {
     this.isMounted = true;
-    this.loadComponent();
     setTimeout(() => {
+      this.loadComponent();
       this.show = true;
-    }, 1000);
+    }, 2000);
   },
   computed: {
     loadComponent() {

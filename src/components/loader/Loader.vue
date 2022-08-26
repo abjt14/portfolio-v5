@@ -6,7 +6,7 @@
   const message = ref();
 
   const messages: string[] = [
-    'Thank you for you patience.',
+    'Thank you for your patience.',
     'Loading your experience.',
     'Converting code to pixels.',
     'Populating the website.'
@@ -27,8 +27,10 @@
 
 <template>
   <div id="loader" :class="loaded ? 'loaded' : null">
-    <div class="message">
-      {{ message }}
+    <div class="message-wrapper">
+      <div class="message">
+        {{ message }}
+      </div>
     </div>
   </div>
 </template>
@@ -46,16 +48,47 @@
     justify-content: center;
     align-items: center;
     transform: translateY(0%);
-    transition: transform 2s ease-in-out 2s;
+    transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1) .5s;
 
-    .message {
-      color: #fff;
-      opacity: 0;
-      transform: translateY(1.5rem);
+    .message-wrapper {
+      overflow: hidden;
+
+      .message {
+        color: #fff;
+        transform: translateY(100%);
+        animation: message-init 1s ease-out forwards;
+
+        @keyframes message-init {
+          from {
+            transform: translateY(400%);
+          }
+
+          to {
+            transform: translateY(0%);
+          }
+        }
+      }
     }
 
-    &.loaded {
 
+    &.loaded {
+      transform: translateY(-100%);
+
+      .message-wrapper {
+        .message {
+          animation: message-loaded 1s ease-in forwards;
+
+          @keyframes message-loaded {
+            from {
+              transform: translateY(0%);
+            }
+
+            to {
+              transform: translateY(-400%);
+            }
+          }
+        }
+      }
     }
   }
 </style>

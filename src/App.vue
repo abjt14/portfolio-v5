@@ -13,12 +13,14 @@
 
   onMounted(async () => {
     await nextTick();
-    loaded.value = true;
+    setTimeout(() => {
+      loaded.value = true;
+    }, 2000);
   });
 </script>
 
 <template>
-  <!-- <Loader :loaded="loaded" /> -->
+  <Loader :loaded="loaded" />
   <NavBar />
   <Hero />
   <Marquee title="work" emoji="👨‍💻" />
