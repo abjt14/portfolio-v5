@@ -13,7 +13,7 @@ export default {
     setTimeout(() => {
       this.loadComponent();
       this.show = true;
-    }, 2000);
+    }, 1500);
   },
   computed: {
     loadComponent() {
