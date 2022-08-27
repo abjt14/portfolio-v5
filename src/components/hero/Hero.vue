@@ -1,7 +1,6 @@
 <script setup lang="ts">
   import { ref, onMounted } from 'vue';
-  // @ts-ignore
-  import { onIntersect } from '../../composables/IntersectionObserver';
+  import { onIntersect } from '../../composables/intersection-observer';
   import Hero3DModel from './Hero3DModel.vue';
 
   const observer = ref();
@@ -80,7 +79,6 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      z-index: 1;
 
       @media only screen and (max-width: 900px) {
         flex-direction: column;
@@ -197,6 +195,8 @@
       height: 100vh;
       width: 100vw;
       overflow: hidden;
+      pointer-events: none;
+      z-index: -1;
     }
   }
 </style>
