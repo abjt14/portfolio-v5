@@ -1,6 +1,7 @@
 <script setup lang="ts">
-  import { ref } from 'vue';
-  import Footer3DModel from './Footer3DModel.vue';
+  import { ref, onMounted } from 'vue';
+  import { onIntersect } from '../../composables/intersection-observer';
+  import Contact3DModel from './Contact3DModel.vue';
 
   interface link {
     href: string,
@@ -42,10 +43,29 @@
       }
     }
   }
+
+  const showModel = ref(false);
+
+  const onEnter = () => {
+    showModel.value = true;
+  }
+
+  const onExit = () => {
+    // placeholder
+  }
+
+  const observer = ref();
+  const scrollRef = ref();
+
+  onMounted(() => {
+    observer.value = onIntersect(scrollRef.value, onEnter, onExit, {
+      threshold: .3,
+    });
+  });
 </script>
 
 <template>
-  <div id="contact" class="page-section">
+  <div id="contact" class="page-section" ref="scrollRef">
     <div class="contact-row">
       <div id="contact-headline-cont">
         <h1 class="headline-col">
@@ -81,7 +101,7 @@
       </div>
     </div>
     <div id="footer-3d-container">
-      <!-- <Footer3DModel /> -->
+      <Contact3DModel :showModel="showModel" />
     </div>
   </div>
 </template>
@@ -288,6 +308,7 @@
       height: 100vh;
       width: 100vw;
       overflow: hidden;
+      pointer-events: none;
       z-index: -1;
     }
   }
