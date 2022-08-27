@@ -61,7 +61,7 @@
       <div class="contact-row-inner">
         <div id="site-info">
           <div>
-            Site built using <span>Vite</span>, <span>Vue</span>, <span>Mixamo</span>, and <span>Blender</span>. Deployed on <span>Vercel</span>.
+            Site built using <span>Vue</span>, <span>Mixamo</span>, and <span>Blender</span>. Deployed on <span>Vercel</span>.
           </div>
           <div>
             © 2022 All rights reserved.
@@ -95,7 +95,7 @@
     justify-content: space-between;
     padding: 5rem;
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
       padding: 2rem 2rem 3rem 2rem;
     }
 
@@ -104,7 +104,7 @@
       justify-content: space-between;
       align-items: flex-start;
 
-      @media only screen and (max-width: 800px) {
+      @media only screen and (max-width: 900px) {
         flex-direction: column;
         gap: 1rem;
         align-items: center;
@@ -117,7 +117,7 @@
         justify-content: space-between;
         gap: 1rem;
 
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 900px) {
           gap: 1rem;
         }
 
@@ -126,7 +126,7 @@
           font-weight: 400;
           flex: 4;
 
-          @media only screen and (max-width: 800px) {
+          @media only screen and (max-width: 900px) {
             font-size: 2.5rem;
             font-weight: 600;
             text-align: center;
@@ -139,7 +139,7 @@
           text-align: left;
           width: fit-content;
 
-          @media only screen and (max-width: 800px) {
+          @media only screen and (max-width: 900px) {
             align-self: center;
           }
 
@@ -160,9 +160,9 @@
           font-weight: 100;
           opacity: 0;
           transition: all .3s ease;
-          margin-top: 1rem;
+          margin-top: 0rem;
 
-          @media only screen and (max-width: 800px) {
+          @media only screen and (max-width: 900px) {
             text-align: center;
             transform: translateY(-1rem);
             margin-top: .5rem;
@@ -172,7 +172,7 @@
             opacity: 1;
             transform: translateY(-.5rem);
 
-            @media only screen and (max-width: 800px) {
+            @media only screen and (max-width: 900px) {
               text-align: center;
               transform: translateY(-1.5rem);
             }
@@ -185,14 +185,15 @@
         font-weight: 300;
         align-self: flex-end;
 
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 900px) {
           font-size: 1.75rem;
           font-weight: 100;
           text-align: center;
+          align-self: center;
         }
 
         &:nth-of-type(2) {
-          @media only screen and (max-width: 800px) {
+          @media only screen and (max-width: 900px) {
             order: -1;
             align-self: center;
           }
@@ -225,7 +226,7 @@
 
           }
 
-          @media only screen and (max-width: 800px) {
+          @media only screen and (max-width: 900px) {
             font-size: 1rem;
             font-weight: 100;
           }
@@ -235,13 +236,13 @@
           display: grid;
           gap: .5rem;
 
-          @media only screen and (max-width: 800px) {
+          @media only screen and (max-width: 900px) {
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
           }
 
           a {
-            @media only screen and (max-width: 800px) {
+            @media only screen and (max-width: 900px) {
               font-size: 1.25rem;
             }
 

@@ -11,17 +11,19 @@
     document.documentElement.style.setProperty('--color', '#000');
     document.documentElement.style.setProperty('--bgc', '#fff');
     document.documentElement.style.setProperty('--border', '#000');
+    document.documentElement.style.setProperty('--model-filter-invert', 'invert(1)');
   }
 
   const onExit = () => {
     document.documentElement.style.setProperty('--color', '#fff');
     document.documentElement.style.setProperty('--bgc', '#000');
     document.documentElement.style.setProperty('--border', '#fff');
+    document.documentElement.style.setProperty('--model-filter-invert', 'invert(0)');
   }
 
   onMounted(() => {
     observer.value = onIntersect(scrollRef.value, onEnter, onExit, {
-      threshold: .15,
+      threshold: .3,
     });
   });
 </script>
@@ -69,7 +71,7 @@
     justify-content: space-between;
     padding: 5rem;
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
       padding: 1rem;
       min-height: calc(100vh - 63.5px);
     }
@@ -79,9 +81,8 @@
       justify-content: space-between;
       align-items: flex-start;
       z-index: 1;
-      pointer-events: none;
 
-      @media only screen and (max-width: 800px) {
+      @media only screen and (max-width: 900px) {
         flex-direction: column;
         gap: 1rem;
         align-items: center;
@@ -90,9 +91,8 @@
       .hero-row-inner {
         font-size: 1.25rem;
         font-weight: 300;
-        pointer-events: all;
 
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 900px) {
           font-size: 1.75rem;
           text-align: center;
         }
@@ -109,7 +109,7 @@
           font-weight: 400;
           flex: 1;
 
-          @media only screen and (max-width: 800px) {
+          @media only screen and (max-width: 900px) {
             font-size: 3rem;
             font-weight: 600;
             text-align: center;
@@ -168,7 +168,6 @@
           text-align: right;
           align-self: self-end;
           animation: scroll-indicator 2s ease-in-out infinite;
-          pointer-events: all;
 
           @keyframes scroll-indicator {
             0% {
@@ -184,7 +183,7 @@
             }
           }
 
-          @media only screen and (max-width: 800px) {
+          @media only screen and (max-width: 900px) {
             display: none;
           }
         }

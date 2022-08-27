@@ -74,7 +74,7 @@
     border-bottom: 1px solid var(--border);
     transition: border .3s ease;
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
       grid-template-columns: 1fr;
     }
 
@@ -82,12 +82,12 @@
       padding: 5rem;
 
       &:nth-of-type(1) {
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 900px) {
           padding-bottom: 0;
         }
       }
 
-      @media only screen and (max-width: 800px) {
+      @media only screen and (max-width: 900px) {
         padding: 1rem;
       }
 
@@ -95,7 +95,7 @@
         border-right: 1px solid var(--border);
         transition: border .3s ease;
 
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 900px) {
           border: none;
         }
       }
@@ -107,7 +107,7 @@
         position: sticky;
         top: 5rem;
 
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 900px) {
           position: unset;
         }
       }
@@ -116,7 +116,7 @@
         display: grid;
         gap: 5rem;
 
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 900px) {
           gap: 1rem;
         }
       }

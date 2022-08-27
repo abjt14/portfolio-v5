@@ -64,7 +64,7 @@ export default {
       transform: translate(0%, -18%) scale(1);
     }
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
       width: 200%;
       transform: translate(-22.5%, -17.5%) scale(.5);
       filter: invert(1) blur(2px);

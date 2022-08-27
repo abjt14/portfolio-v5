@@ -26,7 +26,7 @@
     font-weight: 300;
     z-index: 10;
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
       padding: .75rem 2rem;
     }
 
@@ -34,7 +34,7 @@
       font-weight: 300;
       font-size: 1.25rem;
 
-      @media only screen and (max-width: 800px) {
+      @media only screen and (max-width: 900px) {
         font-size: 1.75rem;
       }
     }

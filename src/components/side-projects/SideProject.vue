@@ -37,7 +37,7 @@
     font-weight: 300;
     padding: 1.5rem;
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
       padding: 1rem;
     }
 
