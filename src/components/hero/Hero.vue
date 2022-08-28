@@ -48,7 +48,7 @@
       </div>
     </div>
     <div id="hero-3d-container">
-      <Hero3DModel />
+      <!-- <Hero3DModel /> -->
     </div>
   </div>
 </template>

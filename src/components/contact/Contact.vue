@@ -101,7 +101,7 @@
       </div>
     </div>
     <div id="footer-3d-container">
-      <Contact3DModel :showModel="showModel" />
+      <!-- <Contact3DModel :showModel="showModel" /> -->
     </div>
   </div>
 </template>
