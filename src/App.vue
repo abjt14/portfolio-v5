@@ -28,8 +28,19 @@
   <Marquee title="side projects" emoji="🧑‍🔬" />
   <SideProjects />
   <Contact />
+  <div id="grain-overlay"></div>
 </template>
 
-<style lang="scss">
-  @import './assets/css/variables.css';
+<style>
+  #grain-overlay {
+    background-image: url('/images/noise/noise.webp');
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    pointer-events: none;
+  }
 </style>
