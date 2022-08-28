@@ -101,7 +101,7 @@
       </div>
     </div>
     <div id="footer-3d-container">
-      <!-- <Contact3DModel :showModel="showModel" /> -->
+      <Contact3DModel :showModel="showModel" />
     </div>
   </div>
 </template>
@@ -109,7 +109,7 @@
 <style scoped lang="scss">
   #contact {
     position: relative;
-    min-height: calc(100vh);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
