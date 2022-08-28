@@ -114,6 +114,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 5rem;
+    margin-top: 10rem;
 
     @media only screen and (max-width: 900px) {
       padding: 2rem 2rem 3rem 2rem;
