@@ -76,7 +76,6 @@
     height: calc(1.75*(100vh - 103px));
     width: 100%;
     transform: translate(0%, -18%) scale(.5);
-    filter: invert(1);
     z-index: 0;
     pointer-events: none;
     opacity: 0;
@@ -91,7 +90,7 @@
     @media only screen and (max-width: 900px) {
       width: 200%;
       transform: translate(-22.5%, -17.5%) scale(.5);
-      filter: invert(1) blur(2px);
+      filter: blur(2px);
 
       &.active {
         opacity: 1;
