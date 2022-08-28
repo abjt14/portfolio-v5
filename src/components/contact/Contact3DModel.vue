@@ -32,8 +32,8 @@
         const xRatio = (x - (window.innerWidth / 2)) / (window.innerWidth / 2);
         const yRatio = (y - (window.innerHeight / 2)) / (window.innerHeight / 2);
 
-        const horizontalAngle = 0 - parseInt((xRatio * 30).toFixed(2) * .5);
-        const verticalAngle = 75 - parseInt((yRatio * 30).toFixed(2) * .5) + 15;
+        const horizontalAngle = - 15 - parseInt((xRatio * 30).toFixed(2) * .5);
+        // const verticalAngle = 75 - parseInt((yRatio * 30).toFixed(2) * .5) + 15;
 
         const cameraOrbitString = `${horizontalAngle}deg ${90}deg 105%`;
 
@@ -66,8 +66,6 @@
     v-if="isMounted"
     :src="src"
     :class="show ? 'active' : null"
-    ar
-    ar-modes="webxr scene-viewer quick-look"
 
     animation-name="Waving|Scene"
     autoplay
@@ -101,12 +99,12 @@
 
     @media only screen and (max-width: 900px) {
       width: 200%;
-      transform: translate(-22.5%, -17.5%) scale(.5);
+      transform: translate(-26%, -30.5%) scale(.5);
       filter: blur(2px);
 
       &.active {
         opacity: 1;
-        transform: translate(-22.5%, -17.5%) scale(1);
+        transform: translate(-26%, -30.5%) scale(1);
       }
     }
   }

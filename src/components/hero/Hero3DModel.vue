@@ -55,8 +55,6 @@
     v-if="isMounted"
     :src="src"
     :class="show ? 'active' : null"
-    ar
-    ar-modes="webxr scene-viewer quick-look"
 
     animation-name="Waving|Scene"
     autoplay
