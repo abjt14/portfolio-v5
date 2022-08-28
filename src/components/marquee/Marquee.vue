@@ -18,6 +18,8 @@
 		border-top: 1px solid var(--border);
 		border-bottom: 1px solid var(--border);
     margin-top: 10rem;
+    -webkit-transition: border .3s ease;
+    -o-transition: border .3s ease;
     transition: border .3s ease;
 
 		.marquee__inner {

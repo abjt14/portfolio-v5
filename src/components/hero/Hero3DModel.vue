@@ -80,6 +80,8 @@
     pointer-events: none;
     opacity: 0;
     transition: opacity .3s ease, transform .3s ease;
+    -webkit-transition: opacity .3s ease, transform .3s ease;
+    -o-transition: opacity .3s ease, transform .3s ease;
     background: transparent;
 
     &.active {

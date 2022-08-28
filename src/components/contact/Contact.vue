@@ -166,6 +166,8 @@
 
           > div {
             display: inline-block;
+            -webkit-transition: transform .1s ease;
+            -o-transition: transform .1s ease;
             transition: transform .1s ease;
           }
 
@@ -180,7 +182,9 @@
           font-size: 1rem;
           font-weight: 100;
           opacity: 0;
-          transition: all .3s ease;
+          -webkit-transition: transform .3s ease, opacity .3s ease;
+          -o-transition: transform .3s ease, opacity .3s ease;
+          transition: transform .3s ease, opacity .3s ease;
           margin-top: 0rem;
 
           @media only screen and (max-width: 900px) {
@@ -269,7 +273,9 @@
 
             > div {
               display: inline-block;
-              transition: all .15s ease;
+              -webkit-transition: transform .15s ease;
+              -o-transition: transform .15s ease;
+              transition: transform .15s ease;
             }
 
             &:hover {

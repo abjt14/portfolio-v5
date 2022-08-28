@@ -76,6 +76,8 @@ import SideProject from './SideProject.vue';
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: 1px solid var(--border);
+    -webkit-transition: border .3s ease;
+    -o-transition: border .3s ease;
     transition: border .3s ease;
 
     @media only screen and (max-width: 900px) {
@@ -97,6 +99,8 @@ import SideProject from './SideProject.vue';
 
       &:first-child {
         border-right: 1px solid var(--border);
+        -webkit-transition: border .3s ease;
+        -o-transition: border .3s ease;
         transition: border .3s ease;
 
         @media only screen and (max-width: 900px) {

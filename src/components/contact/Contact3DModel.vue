@@ -90,6 +90,8 @@
     z-index: 0;
     pointer-events: none;
     opacity: 0;
+    -webkit-transition: opacity .3s ease, transform .3s ease;
+    -o-transition: opacity .3s ease, transform .3s ease;
     transition: opacity .3s ease, transform .3s ease;
     background: transparent;
 

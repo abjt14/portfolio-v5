@@ -25,6 +25,8 @@
       padding: .5rem 1rem;
       border: 1px solid #000;
       border-radius: 2rem;
+      -webkit-transition: transform .1s ease;
+      -o-transition: transform .1s ease;
       transition: transform .1s ease;
 
       &:hover {

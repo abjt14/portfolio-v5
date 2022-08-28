@@ -48,6 +48,8 @@
     justify-content: center;
     align-items: center;
     transform: translateY(0%);
+    -webkit-transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1) .5s;
+    -o-transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1) .5s;
     transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1) .5s;
 
     .message-wrapper {
