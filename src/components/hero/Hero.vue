@@ -8,14 +8,14 @@
 
   const onEnter = () => {
     document.documentElement.style.setProperty('--color', '#000');
-    document.documentElement.style.setProperty('--bgc', '#fff');
+    document.documentElement.style.setProperty('--bg', '#fff');
     document.documentElement.style.setProperty('--border', '#000');
     document.documentElement.style.setProperty('--model-filter-invert', 'invert(1)');
   }
 
   const onExit = () => {
     document.documentElement.style.setProperty('--color', '#fff');
-    document.documentElement.style.setProperty('--bgc', '#000');
+    document.documentElement.style.setProperty('--bg', '#000');
     document.documentElement.style.setProperty('--border', '#fff');
     document.documentElement.style.setProperty('--model-filter-invert', 'invert(0)');
   }
