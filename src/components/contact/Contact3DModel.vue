@@ -90,9 +90,9 @@
     z-index: 0;
     pointer-events: none;
     opacity: 0;
-    -webkit-transition: opacity .3s ease, transform .3s ease;
-    -o-transition: opacity .3s ease, transform .3s ease;
-    transition: opacity .3s ease, transform .3s ease;
+    -webkit-transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    -o-transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
     background: transparent;
 
     &.active {
@@ -103,7 +103,7 @@
     @media only screen and (max-width: 900px) {
       width: 200%;
       transform: translate(-26%, -30.5%) scale(.5);
-      filter: blur(2px);
+      filter: invert(.5);
 
       &.active {
         opacity: 1;

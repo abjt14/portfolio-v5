@@ -14,12 +14,10 @@
     },
     mounted() {
       this.isMounted = true;
-      setTimeout(() => {
-        this.loadComponent();
-      }, 2000);
+      this.loadComponent();
       setTimeout(() => {
         this.show = true;
-      }, 2250);
+      }, 1000);
     },
     computed: {
       loadComponent() {
@@ -79,10 +77,11 @@
     z-index: 0;
     pointer-events: none;
     opacity: 0;
-    transition: opacity .3s ease, transform .3s ease;
-    -webkit-transition: opacity .3s ease, transform .3s ease;
-    -o-transition: opacity .3s ease, transform .3s ease;
+    -webkit-transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    -o-transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
     background: transparent;
+    filter: invert(1);
 
     &.active {
       opacity: 1;
@@ -91,12 +90,12 @@
 
     @media only screen and (max-width: 900px) {
       width: 200%;
-      transform: translate(-22.5%, -17.5%) scale(.5);
-      filter: blur(2px);
+      transform: translate(-22.5%, -22.5%) scale(.5);
+      filter: invert(.5);
 
       &.active {
         opacity: 1;
-        transform: translate(-22.5%, -17.5%) scale(1);
+        transform: translate(-22.5%, -22.5%) scale(.8);
       }
     }
   }

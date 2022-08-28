@@ -1,34 +1,9 @@
 <script setup lang="ts">
-  import { ref, onMounted } from 'vue';
-  import { onIntersect } from '../../composables/intersection-observer';
   import Hero3DModel from './Hero3DModel.vue';
-
-  const observer = ref();
-  const scrollRef = ref();
-
-  const onEnter = () => {
-    document.documentElement.style.setProperty('--color', '#000');
-    document.documentElement.style.setProperty('--bg', '#fff');
-    document.documentElement.style.setProperty('--border', '#000');
-    // document.documentElement.style.setProperty('--model-filter-invert', 'invert(1)');
-  }
-
-  const onExit = () => {
-    document.documentElement.style.setProperty('--color', '#fff');
-    document.documentElement.style.setProperty('--bg', '#000');
-    document.documentElement.style.setProperty('--border', '#fff');
-    // document.documentElement.style.setProperty('--model-filter-invert', 'invert(0)');
-  }
-
-  onMounted(() => {
-    observer.value = onIntersect(scrollRef.value, onEnter, onExit, {
-      threshold: .3,
-    });
-  });
 </script>
 
 <template>
-  <div id="hero" class="page-section" ref="scrollRef">
+  <div id="hero" class="page-section">
     <div class="hero-row">
       <div class="hero-row-inner">
         Hello, I am Abhijeet.
@@ -40,7 +15,7 @@
     <div class="hero-row">
       <div id="headline-cont">
         <h1 class="headline-col">
-          I Build <div class="animated-italics">Engaging Experiences</div> For The Internet
+          I Build <div class="animated-headline">Engaging Experiences</div> For The Internet
         </h1>
         <div id="scroll-indicator" class="headline-col">
           ↓
@@ -54,14 +29,6 @@
 </template>
 
 <style scoped lang="scss">
-
-  // colors
-  $yellow: #ffc900;
-  $purple: #90a8ed;
-  $red: #e2442f;
-  $pink: #ff90e8;
-  $green: #23a094;
-
   #hero {
     position: relative;
     min-height: calc(100vh - 52.5px);
@@ -113,48 +80,25 @@
             text-align: center;
           }
 
-          .animated-italics {
+          .animated-headline {
             display: inline-block;
             font-style: normal;
             font-weight: 900;
 
-            @keyframes animated-font-style {
-              0% {
-                font-style: normal;
-              }
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(90deg, #0077e7, #01d8d1);
+            filter: hue-rotate(0deg);
+            animation: hueShift 6s infinite linear 1s;
 
-              50% {
-                font-style: italic;
+            @keyframes hueShift {
+              0% {
+                filter: hue-rotate(0deg);
               }
 
               100% {
-                font-style: normal;
-              }
-            }
-
-            @keyframes animated-font-color {
-              0% {
-                color: $yellow;
-              }
-
-              20% {
-                color: $purple;
-              }
-
-              40% {
-                color: $red;
-              }
-
-              60% {
-                color: $pink;
-              }
-
-              80% {
-                color: $green;
-              }
-
-              100% {
-                color: $yellow;
+                filter: hue-rotate(360deg);
               }
             }
           }

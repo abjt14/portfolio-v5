@@ -69,7 +69,7 @@
     <div class="contact-row">
       <div id="contact-headline-cont">
         <h1 class="headline-col">
-          I'd love to hear from you.
+          I'd love to <div class="animated-contact-headline">hear from you.</div>
         </h1>
         <button id="email" @click="copyEmail">abhijeetsinghmain@gmail.com <div>⧉</div></button>
         <div id="email-copy-success-message" :class="[copied ? 'copied' : '']">
@@ -126,7 +126,7 @@
 
       @media only screen and (max-width: 900px) {
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
         align-items: center;
       }
 
@@ -151,11 +151,34 @@
             font-weight: 600;
             text-align: center;
           }
+
+          .animated-contact-headline {
+            display: inline-block;
+            font-style: normal;
+            font-weight: 900;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(90deg, #0077e7, #01d8d1);
+            filter: hue-rotate(0deg);
+            animation: hueShift 6s infinite linear 1s;
+
+            @keyframes hueShift {
+              0% {
+                filter: hue-rotate(0deg);
+              }
+
+              100% {
+                filter: hue-rotate(360deg);
+              }
+            }
+          }
         }
 
         button#email {
           color: var(--color);
-          font-size: 1.75rem;
+          font-size: 1.25rem;
+          font-weight: 300;
           text-align: left;
           width: fit-content;
 

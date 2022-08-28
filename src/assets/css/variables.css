@@ -1,6 +1,6 @@
 :root {
-  --color: #000;
-  --bg: #fff;
+  --color: #fff;
+  --bg: #000;
 
   --yellow: #ffc900;
   --purple: #90a8ed;
@@ -8,7 +8,5 @@
   --pink: #ff90e8;
   --green: #23a094;
 
-  --border: #000;
-
-  --model-filter-invert: invert(1);
+  --border: #fff;
 }

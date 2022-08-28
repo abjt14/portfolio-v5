@@ -21,13 +21,6 @@
 </template>
 
 <style scoped lang="scss">
-  // colors
-  $yellow: #ffc900;
-  $purple: #90a8ed;
-  $red: #e2442f;
-  $pink: #ff90e8;
-  $green: #23a094;
-
   .side-project {
     color: #000;
     border-radius: .5rem;
@@ -42,23 +35,23 @@
     }
 
     &:nth-child(1) {
-      background: $green;
+      background: var(--green);
     }
 
     &:nth-child(2) {
-      background: $pink;
+      background: var(--pink);
     }
 
     &:nth-child(3) {
-      background: $red;
+      background: var(--red);
     }
 
     &:nth-child(4) {
-      background: $purple;
+      background: var(--purple);
     }
 
     &:nth-child(5) {
-      background: $yellow;
+      background: var(--yellow);
     }
 
     .sp-title{
