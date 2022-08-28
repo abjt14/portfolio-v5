@@ -32,7 +32,7 @@
       title: 'Outlined',
       role: 'Software Engineer',
       year: '2019-2020',
-      summary: 'Built and maintained a SaaS Artificial Intelligence driven Digital Design Assistant that allows a designer or a brand marketer to accelerate their design asset creation and manage communication accros large teams.',
+      summary: 'Built and maintained a SaaS Artificial Intelligence driven Digital Design Assistant that allows a designer or a brand marketer to accelerate their design asset creation and manage communication across large teams.',
       tags: [
         'Laravel', 'FabricJS', 'Shell Scripting', 'MySQL'
       ]
@@ -44,12 +44,12 @@
   <div id="work" class="page-section">
     <div class="work-col">
       <div id="work-summary">
-        I've had the opportunity to work on versatile projects in the last 3 years with some amazing teams.
+        I've worked on versatile projects in the last 3 years with some fantastic teams.
 
         <br /><br />
 
         Building beautiful interfaces and performant backend applications
-        for academic, client-facing, and buisiness-facing projects.
+        for academic, client-facing, and business-facing projects.
       </div>
     </div>
     <div class="work-col">

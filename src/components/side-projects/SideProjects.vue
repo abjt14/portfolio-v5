@@ -49,7 +49,7 @@ import SideProject from './SideProject.vue';
   <div id="side-projects" class="page-section">
     <div class="side-projects-col">
       <div id="sp-summary">
-        I upload code doodles that I've implemented in my personal projects. I rebuild my porfolio to experiment with different designs and experiences.
+        I upload code doodles that I've implemented in my personal projects. I rebuild my portfolio to experiment with different designs and experiences.
 
         <br /><br />
 

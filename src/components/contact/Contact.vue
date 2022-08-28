@@ -32,7 +32,7 @@
   const copyEmail = async () => {
     if (!copied.value) {
       try {
-        await navigator.clipboard.writeText('contact@abjt.dev');
+        await navigator.clipboard.writeText('abhijeetsinghmain@gmail.com');
         copied.value = true;
 
         setTimeout(() => {
@@ -71,7 +71,7 @@
         <h1 class="headline-col">
           I'd love to hear from you.
         </h1>
-        <button id="email" @click="copyEmail">contact@abjt.dev <div>⧉</div></button>
+        <button id="email" @click="copyEmail">abhijeetsinghmain@gmail.com <div>⧉</div></button>
         <div id="email-copy-success-message" :class="[copied ? 'copied' : '']">
           Copied email to clipboard 🙌
         </div>
@@ -160,6 +160,7 @@
           width: fit-content;
 
           @media only screen and (max-width: 900px) {
+            font-size: 1.25rem;
             align-self: center;
           }
 
@@ -185,7 +186,7 @@
           @media only screen and (max-width: 900px) {
             text-align: center;
             transform: translateY(-1rem);
-            margin-top: .5rem;
+            margin-top: 1rem;
           }
 
           &.copied {
