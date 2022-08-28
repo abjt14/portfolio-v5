@@ -14,14 +14,14 @@
   .link-button {
     display: block;
     position: relative;
-    background-color: #000;
+    background: #000;
     border-radius: 2rem;
     max-width: fit-content;
 
     .lb-content {
       font-size: 1rem;
       color: #000;
-      background-color: #fff;
+      background: #fff;
       padding: .5rem 1rem;
       border: 1px solid #000;
       border-radius: 2rem;

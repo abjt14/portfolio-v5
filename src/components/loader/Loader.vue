@@ -42,7 +42,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background: #000;
     z-index: 100;
     display: flex;
     justify-content: center;

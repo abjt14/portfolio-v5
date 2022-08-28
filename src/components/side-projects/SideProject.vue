@@ -42,23 +42,23 @@
     }
 
     &:nth-child(1) {
-      background-color: $green;
+      background: $green;
     }
 
     &:nth-child(2) {
-      background-color: $pink;
+      background: $pink;
     }
 
     &:nth-child(3) {
-      background-color: $red;
+      background: $red;
     }
 
     &:nth-child(4) {
-      background-color: $purple;
+      background: $purple;
     }
 
     &:nth-child(5) {
-      background-color: $yellow;
+      background: $yellow;
     }
 
     .sp-title{

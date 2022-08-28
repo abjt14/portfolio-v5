@@ -35,23 +35,23 @@
     }
 
     &:nth-child(1) {
-      background-color: $yellow;
+      background: $yellow;
     }
 
     &:nth-child(2) {
-      background-color: $purple;
+      background: $purple;
     }
 
     &:nth-child(3) {
-      background-color: $red;
+      background: $red;
     }
 
     &:nth-child(4) {
-      background-color: $pink;
+      background: $pink;
     }
 
     &:nth-child(5) {
-      background-color: $green;
+      background: $green;
     }
 
     .project-title{
