@@ -40,13 +40,3 @@ button {
     text-align: left;
   }
 }
-
-*::-moz-selection {
-  color: var(--bg);
-  background: var(--color);
-}
-
-*::selection {
-  color: var(--bg);
-  background: var(--color);
-}
