@@ -7,7 +7,7 @@
   <div class="side-project">
     <div class="sp-title">{{ title }} &nbsp;&#10022;&nbsp;  {{ type }}</div>
     <div class="sp-image">
-      <img :src="image_url" alt="">
+      <img :src="image_url" alt="" loading="lazy">
     </div>
     <div class="sp button">
       <LinkButton :href="href">

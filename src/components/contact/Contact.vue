@@ -32,7 +32,7 @@
   const copyEmail = async () => {
     if (!copied.value) {
       try {
-        await navigator.clipboard.writeText('abhijeetsinghmain@gmail.com');
+        await navigator.clipboard.writeText('contact@abjt.dev');
         copied.value = true;
 
         setTimeout(() => {
@@ -71,7 +71,7 @@
         <h1 class="headline-col">
           I'd love to <div class="animated-contact-headline">hear from you.</div>
         </h1>
-        <button id="email" @click="copyEmail">abhijeetsinghmain@gmail.com <div>⧉</div></button>
+        <button id="email" @click="copyEmail">contact@abjt.dev <div>⧉</div></button>
         <div id="email-copy-success-message" :class="[copied ? 'copied' : '']">
           Copied email to clipboard 🙌
         </div>
@@ -100,7 +100,7 @@
         </div>
       </div>
     </div>
-    <div id="footer-3d-container">
+    <div id="contact-3d-container">
       <Contact3DModel :showModel="showModel" />
     </div>
   </div>
@@ -332,12 +332,12 @@
       }
     }
 
-    #footer-3d-container {
+    #contact-3d-container {
       position: absolute;
       top: 0;
       left: 0;
-      height: 100vh;
-      width: 100vw;
+      height: 100%;
+      width: 100%;
       overflow: hidden;
       pointer-events: none;
       z-index: -1;
