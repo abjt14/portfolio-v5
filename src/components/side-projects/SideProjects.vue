@@ -12,7 +12,7 @@ import SideProject from './SideProject.vue';
     {
       title: 'Portfolio V4',
       type: 'Website',
-      href: 'https://abjt14.github.io/portfolio-v4/',
+      href: 'https://portfolio-v4-abjt14.vercel.app/',
       image_url: '/images/side-projects/portfolio-v4.webp',
       tags: [
         'Svelte',
