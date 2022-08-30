@@ -73,6 +73,8 @@
   model-viewer {
     height: calc(1.75*(100vh - 103px));
     width: 100%;
+    -webkit-transform: translate(0%, -18%) scale(.5);
+    -ms-transform: translate(0%, -18%) scale(.5);
     transform: translate(0%, -18%) scale(.5);
     z-index: 0;
     pointer-events: none;
@@ -81,20 +83,28 @@
     -o-transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
     transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
     background: transparent;
+    -webkit-filter: invert(1);
     filter: invert(1);
 
     &.active {
       opacity: 1;
+      -webkit-transform: translate(0%, -18%) scale(1);
+      -ms-transform: translate(0%, -18%) scale(1);
       transform: translate(0%, -18%) scale(1);
     }
 
     @media only screen and (max-width: 900px) {
       width: 200%;
+      -webkit-transform: translate(-22.5%, -22.5%) scale(.5);
+      -ms-transform: translate(-22.5%, -22.5%) scale(.5);
       transform: translate(-22.5%, -22.5%) scale(.5);
+      -webkit-filter: invert(.5);
       filter: invert(.5);
 
       &.active {
         opacity: 1;
+        -webkit-transform: translate(-22.5%, -22.5%) scale(.8);
+        -ms-transform: translate(-22.5%, -22.5%) scale(.8);
         transform: translate(-22.5%, -22.5%) scale(.8);
       }
     }

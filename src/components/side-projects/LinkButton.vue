@@ -16,6 +16,8 @@
     position: relative;
     background: #000;
     border-radius: 2rem;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
 
     .lb-content {
@@ -30,10 +32,14 @@
       transition: transform .1s ease;
 
       &:hover {
+        -webkit-transform: translate(-.25rem, -.25rem);
+        -ms-transform: translate(-.25rem, -.25rem);
         transform: translate(-.25rem, -.25rem);
       }
 
       &:active {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
         transform: translate(0, 0);
       }
     }

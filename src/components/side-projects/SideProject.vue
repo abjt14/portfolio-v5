@@ -66,11 +66,16 @@
     }
 
     .sp-tags {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       gap: .5rem;
       color: #000;
       font-weight: 600;
+      max-width: -webkit-fit-content;
+      max-width: -moz-fit-content;
       max-width: fit-content;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
       .sp-tag {

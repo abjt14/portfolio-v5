@@ -69,6 +69,7 @@
 
 <style scoped lang="scss">
   #work {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: 1px solid var(--border);
@@ -105,6 +106,8 @@
       }
 
       #work-summary {
+        -webkit-box-flex: 4;
+        -ms-flex: 4;
         flex: 4;
         font-size: 1.25rem;
         font-weight: 300;
@@ -117,6 +120,7 @@
       }
 
       #work-exp {
+        display: -ms-grid;
         display: grid;
         gap: 5rem;
 

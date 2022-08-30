@@ -23,15 +23,24 @@
     transition: border .3s ease;
 
 		.marquee__inner {
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
 			width: fit-content;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+			-webkit-animation: marquee 30s linear infinite;
 			animation: marquee 30s linear infinite;
 		}
 
 		span {
 			font-size: 1rem;
 			padding: 0 .5rem;
+			width: -webkit-max-content;
+			width: -moz-max-content;
 			width: max-content;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
 			gap: 1rem;
 
@@ -46,13 +55,31 @@
 			}
 		}
 
-		@keyframes marquee {
+		@-webkit-keyframes marquee {
 			0% {
-				transform: translateX(0)
+				-webkit-transform: translateX(0);
+				-ms-transform: translateX(0);
+        transform: translateX(0);
 			}
 
 			100% {
-				transform: translateX(-50%)
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+			}
+		}
+
+		@keyframes marquee {
+			0% {
+				-webkit-transform: translateX(0);
+				-ms-transform: translateX(0);
+        transform: translateX(0);
+			}
+
+			100% {
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+        transform: translateX(-50%);
 			}
 		}
   }

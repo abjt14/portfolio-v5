@@ -19,7 +19,11 @@
 
 <style scoped lang="scss">
   nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: .75rem 5rem;
     border-bottom: 1px solid var(--border);

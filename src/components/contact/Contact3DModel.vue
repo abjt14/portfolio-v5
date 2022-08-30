@@ -84,6 +84,8 @@
   model-viewer {
     height: calc(1.75*(100vh - 103px));
     width: 100%;
+    -webkit-transform: translate(0%, -30%) scale(.5);
+    -ms-transform: translate(0%, -30%) scale(.5);
     transform: translate(0%, -30%) scale(.5);
     z-index: 0;
     pointer-events: none;
@@ -95,16 +97,23 @@
 
     &.active {
       opacity: 1;
+      -webkit-transform: translate(0%, -30%) scale(1);
+      -ms-transform: translate(0%, -30%) scale(1);
       transform: translate(0%, -30%) scale(1);
     }
 
     @media only screen and (max-width: 900px) {
       width: 200%;
+      -webkit-transform: translate(-26%, -30.5%) scale(.5);
+      -ms-transform: translate(-26%, -30.5%) scale(.5);
       transform: translate(-26%, -30.5%) scale(.5);
+      -webkit-filter: invert(.5);
       filter: invert(.5);
 
       &.active {
         opacity: 1;
+        -webkit-transform: translate(-26%, -30.5%) scale(1);
+        -ms-transform: translate(-26%, -30.5%) scale(1);
         transform: translate(-26%, -30.5%) scale(1);
       }
     }
