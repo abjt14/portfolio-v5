@@ -49,7 +49,7 @@
         <br /><br />
 
         Building beautiful interfaces and performant backend applications
-        for academic, client-facing, and business-facing projects.
+        for professional, academic, and personal projects.
       </div>
     </div>
     <div class="work-col">
