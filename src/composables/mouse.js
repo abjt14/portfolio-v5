@@ -5,7 +5,7 @@ export function useMouse() {
   const x = ref(0);
   const y = ref(0);
 
-  useEventListener(window, 'mousemove', (event) => {
+  useEventListener(document.body, 'mousemove', (event) => {
     x.value = event.clientX;
     y.value = event.clientY;
   });
