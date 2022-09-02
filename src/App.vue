@@ -8,6 +8,7 @@
   import Marquee from './components/marquee/Marquee.vue';
   import SideProjects from './components/side-projects/SideProjects.vue';
   import Contact from './components/contact/Contact.vue';
+  import Mouse from './components/mouse/Mouse.vue';
 
   const loaded = ref(false);
 
@@ -28,6 +29,7 @@
   <Marquee title="side projects" emoji="🧑‍🔬" />
   <SideProjects />
   <Contact />
+  <Mouse />
   <div id="grain-overlay"></div>
 </template>
 
