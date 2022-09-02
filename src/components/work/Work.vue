@@ -44,7 +44,7 @@
   <div id="work" class="page-section">
     <div class="work-col">
       <div id="work-summary">
-        I've worked on versatile projects in the last 3 years with some fantastic teams.
+        I've worked on personalised projects in the last 3 years with some fantastic teams.
 
         <br /><br />
 
