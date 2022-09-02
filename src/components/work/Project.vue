@@ -28,23 +28,19 @@
     }
 
     &:nth-child(1) {
-      background: var(--yellow);
+      background: var(--yellow-red-grad);
     }
 
     &:nth-child(2) {
-      background: var(--purple);
+      background: var(--red-purple-grad);
     }
 
     &:nth-child(3) {
-      background: var(--red);
+      background: var(--purple-green-grad);
     }
 
     &:nth-child(4) {
-      background: var(--pink);
-    }
-
-    &:nth-child(5) {
-      background: var(--green);
+      background: var(--green-yellow-grad);
     }
 
     .project-title{

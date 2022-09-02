@@ -334,10 +334,6 @@
             }
 
             &:nth-of-type(4) {
-              color: var(--pink);
-            }
-
-            &:nth-of-type(5) {
               color: var(--green);
             }
 
@@ -392,10 +388,6 @@
             }
 
             &:nth-of-type(4):hover {
-              color: var(--pink);
-            }
-
-            &:nth-of-type(5):hover {
               color: var(--green);
             }
           }

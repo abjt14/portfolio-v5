@@ -35,23 +35,19 @@
     }
 
     &:nth-child(1) {
-      background: var(--green);
+      background: var(--green-yellow-grad);
     }
 
     &:nth-child(2) {
-      background: var(--pink);
+      background: var(--purple-green-grad);
     }
 
     &:nth-child(3) {
-      background: var(--red);
+      background: var(--red-purple-grad);
     }
 
     &:nth-child(4) {
-      background: var(--purple);
-    }
-
-    &:nth-child(5) {
-      background: var(--yellow);
+      background: var(--yellow-red-grad);
     }
 
     .sp-title{

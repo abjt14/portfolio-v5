@@ -30,8 +30,9 @@
     methods: {
       calcCameraOrbit(x, y) {
         const xRatio = (x - (window.innerWidth / 2)) / (window.innerWidth / 2);
+        const turnFactor = 60;
 
-        const horizontalAngle = - 15 - parseInt((xRatio * 30).toFixed(2) * .5);
+        const horizontalAngle = - 15 - parseInt((xRatio * turnFactor).toFixed(2) * .5);
 
         const cameraOrbitString = `${horizontalAngle}deg ${90}deg 105%`;
 

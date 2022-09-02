@@ -5,8 +5,63 @@
   --yellow: #ffc900;
   --purple: #90a8ed;
   --red: #e2442f;
-  --pink: #ff90e8;
   --green: #23a094;
+
+  --yellow-red-grad: linear-gradient(
+    45deg,
+    hsl(47deg 100% 50%) 0%,
+    hsl(43deg 98% 50%) 11%,
+    hsl(38deg 94% 51%) 22%,
+    hsl(34deg 92% 51%) 33%,
+    hsl(29deg 89% 52%) 44%,
+    hsl(25deg 86% 52%) 56%,
+    hsl(20deg 84% 52%) 67%,
+    hsl(16deg 81% 53%) 78%,
+    hsl(12deg 78% 53%) 89%,
+    hsl(7deg 76% 54%) 100%
+  );
+
+  --red-purple-grad: linear-gradient(
+    45deg,
+    hsl(7deg 76% 54%) 0%,
+    hsl(351deg 75% 56%) 11%,
+    hsl(335deg 75% 58%) 22%,
+    hsl(319deg 74% 61%) 33%,
+    hsl(303deg 74% 63%) 44%,
+    hsl(288deg 74% 65%) 56%,
+    hsl(272deg 73% 68%) 67%,
+    hsl(256deg 73% 70%) 78%,
+    hsl(241deg 73% 72%) 89%,
+    hsl(225deg 72% 75%) 100%
+  );
+
+  --purple-green-grad: linear-gradient(
+    45deg,
+    hsl(225deg 72% 75%) 0%,
+    hsl(219deg 71% 71%) 11%,
+    hsl(214deg 71% 67%) 22%,
+    hsl(208deg 70% 63%) 33%,
+    hsl(202deg 69% 59%) 44%,
+    hsl(196deg 67% 54%) 56%,
+    hsl(191deg 67% 50%) 67%,
+    hsl(185deg 66% 46%) 78%,
+    hsl(180deg 65% 42%) 89%,
+    hsl(174deg 64% 38%) 100%
+  );
+
+  --green-yellow-grad: linear-gradient(
+    45deg,
+    hsl(174deg 64% 38%) 0%,
+    hsl(160deg 68% 39%) 11%,
+    hsl(146deg 72% 41%) 22%,
+    hsl(132deg 76% 42%) 33%,
+    hsl(118deg 80% 44%) 44%,
+    hsl(104deg 84% 45%) 56%,
+    hsl(90deg 88% 46%) 67%,
+    hsl(75deg 92% 47%) 78%,
+    hsl(61deg 96% 49%) 89%,
+    hsl(47deg 100% 50%) 100%
+  );
 
   --border: #fff;
 }
