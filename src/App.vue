@@ -11,6 +11,7 @@
   import Mouse from './components/mouse/Mouse.vue';
 
   const loaded = ref(false);
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
   onMounted(async () => {
     await nextTick();
@@ -29,7 +30,7 @@
   <Marquee title="side projects" emoji="🧑‍🔬" />
   <SideProjects />
   <Contact />
-  <Mouse />
+  <Mouse v-if="!isSafari" />
   <div id="grain-overlay"></div>
 </template>
 
