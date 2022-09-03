@@ -93,6 +93,7 @@
           <a
             v-for="link in links"
             :href="link.href"
+            class="link-mouse-interact"
             target="_blank"
           >
             {{ link.title }}&nbsp;<div>↗</div>

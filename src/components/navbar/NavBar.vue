@@ -11,7 +11,7 @@
 <template>
   <nav>
     <button id="logo" @click="scrollToTop">ABJT</button>
-    <button id="contact-button" @click="scrollToBottom">
+    <button id="contact-button" class="link-mouse-interact" @click="scrollToBottom">
       Socials
     </button>
   </nav>
