@@ -68,9 +68,9 @@
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
 
-      -webkit-transition: all .8s cubic-bezier(.19,1,.22,1), opacity .2s ease;
-      -o-transition: all .8s cubic-bezier(.19,1,.22,1), opacity .2s ease;
-      transition: all .8s cubic-bezier(.19,1,.22,1), opacity .2s ease;
+      -webkit-transition: all .8s cubic-bezier(.19,1,.22,1);
+      -o-transition: all .8s cubic-bezier(.19,1,.22,1);
+      transition: all .8s cubic-bezier(.19,1,.22,1);
 
       &.link-hovered {
         width: 48px;

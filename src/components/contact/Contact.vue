@@ -363,9 +363,9 @@
 
             > div {
               display: inline-block;
-              -webkit-transition: transform .15s ease;
-              -o-transition: transform .15s ease;
-              transition: transform .15s ease;
+              -webkit-transition: transform .3s ease;
+              -o-transition: transform .3s ease;
+              transition: transform .3s ease;
             }
 
             &:hover {
