@@ -4,44 +4,48 @@ import SideProject from './SideProject.vue';
     title: string,
     type: string,
     href: string,
-    image_url: string,
-    tags: string[]
+    video_url: string,
+    tags: string[],
+    show: boolean
   }
 
   const side_projects: side_project[] = [
     {
-      title: 'Portfolio V4',
-      type: 'Website',
-      href: 'https://portfolio-v4-abjt14.vercel.app/',
-      image_url: '/images/side-projects/portfolio-v4.webp',
-      tags: [
-        'Svelte',
-        'SCSS',
-        'GSAP',
-        'Vercel'
-      ]
-    },
-    {
       title: 'Magnetic Element',
-      type: 'Code Snippet',
+      type: 'Codepen',
       href: 'https://codepen.io/abjt14/full/qBoEJwp',
-      image_url: '/images/side-projects/magnetic-element.webp',
+      video_url: 'videos/side-projects/magnetic-element.mp4',
       tags: [
         'HTML',
         'CSS',
         'GSAP',
-      ]
+      ],
+      show: true,
     },
     {
-      title: 'Ye Unsplash',
-      type: 'Website',
-      href: 'https://abjt14.github.io/ye-unsplash/',
-      image_url: '/images/side-projects/ye-unsplash.webp',
+      title: 'Flying Rings Pointer',
+      type: 'Codepen',
+      href: 'https://codepen.io/abjt14/full/RwJrmpz',
+      video_url: 'videos/side-projects/flying-rings-pointer.mp4',
       tags: [
         'HTML',
         'CSS',
-      ]
-    }
+        'JS'
+      ],
+      show: true,
+    },
+    {
+      title: 'List Hover Preview',
+      type: 'Codepen',
+      href: 'https://codepen.io/abjt14/full/wvXMbeG',
+      video_url: 'videos/side-projects/list-hover-preview.mp4',
+      tags: [
+        'HTML',
+        'CSS',
+        'JS'
+      ],
+      show: true,
+    },
   ];
 </script>
 
@@ -60,10 +64,11 @@ import SideProject from './SideProject.vue';
       <div id="side-projects-exp">
         <SideProject
           v-for="project in side_projects"
+          :show="project.show"
           :title="project.title"
           :type="project.type"
           :href="project.href"
-          :image_url="project.image_url"
+          :video_url="project.video_url"
           :tags="project.tags"
         />
       </div>

@@ -1,13 +1,24 @@
 <script setup lang="ts">
   import LinkButton from './LinkButton.vue';
-  defineProps(['title', 'type', 'href', 'image_url', 'tags']);
+  defineProps(['title', 'type', 'href', 'video_url', 'tags', 'show']);
 </script>
 
 <template>
-  <div class="side-project">
+  <div
+    class="side-project"
+    v-if="show"
+  >
     <div class="sp-title">{{ title }} &nbsp;&#10022;&nbsp;  {{ type }}</div>
     <div class="sp-image">
-      <img :src="image_url" alt="" loading="lazy">
+      <video
+        loop
+        controls
+        autoplay
+        muted
+        preload="none"
+      >
+        <source v-if="video_url" :src="video_url" type="video/mp4">
+      </video>
     </div>
     <div class="sp button">
       <LinkButton :href="href">
