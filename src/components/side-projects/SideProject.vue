@@ -46,19 +46,19 @@
     }
 
     &:nth-child(1) {
-      background: var(--green-yellow-grad);
+      background: var(--yellow-red-grad);
     }
 
     &:nth-child(2) {
-      background: var(--purple-green-grad);
-    }
-
-    &:nth-child(3) {
       background: var(--red-purple-grad);
     }
 
+    &:nth-child(3) {
+      background: var(--purple-green-grad);
+    }
+
     &:nth-child(4) {
-      background: var(--yellow-red-grad);
+      background: var(--green-yellow-grad);
     }
 
     .sp-title{

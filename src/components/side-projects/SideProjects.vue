@@ -23,10 +23,10 @@ import SideProject from './SideProject.vue';
       show: true,
     },
     {
-      title: 'Flying Rings Pointer',
+      title: 'Floating Pill Menu Background',
       type: 'Codepen',
-      href: 'https://codepen.io/abjt14/full/RwJrmpz',
-      video_url: 'videos/side-projects/flying-rings-pointer.mp4',
+      href: 'https://codepen.io/abjt14/full/zYaBExZ',
+      video_url: 'videos/side-projects/floating-pill-menu-background.mp4',
       tags: [
         'HTML',
         'CSS',
@@ -39,6 +39,18 @@ import SideProject from './SideProject.vue';
       type: 'Codepen',
       href: 'https://codepen.io/abjt14/full/wvXMbeG',
       video_url: 'videos/side-projects/list-hover-preview.mp4',
+      tags: [
+        'HTML',
+        'CSS',
+        'JS'
+      ],
+      show: true,
+    },
+    {
+      title: 'Flying Rings Pointer',
+      type: 'Codepen',
+      href: 'https://codepen.io/abjt14/full/RwJrmpz',
+      video_url: 'videos/side-projects/flying-rings-pointer.mp4',
       tags: [
         'HTML',
         'CSS',
