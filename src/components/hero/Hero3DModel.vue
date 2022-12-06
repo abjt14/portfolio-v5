@@ -89,9 +89,9 @@
 
     &.active {
       opacity: 1;
-      -webkit-transform: translate(0%, -18%) scale(1);
-      -ms-transform: translate(0%, -18%) scale(1);
-      transform: translate(0%, -18%) scale(1);
+      -webkit-transform: translate(0%, -18%) scale(.6);
+      -ms-transform: translate(0%, -18%) scale(.6);
+      transform: translate(0%, -18%) scale(.6);
     }
 
     @media only screen and (max-width: 900px) {
